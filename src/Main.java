@@ -10,9 +10,13 @@ public class Main {
         } else {
             bonus = 0;
         }
-        int FinalBalance = balance + replenishment;
 
-        System.out.println("Итоговый баланс : " + FinalBalance);
+        if (bonus > 100) {
+            bonus = 100;
+        }
+        int finalBalance = balance + replenishment;
+
+        System.out.println("Итоговый баланс : " + finalBalance);
         System.out.println("Итоговый бонус : " + bonus);
     }
 }
