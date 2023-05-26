@@ -14,7 +14,7 @@ public class Main {
         if (bonus > 100) {
             bonus = 100;
         }
-        int finalBalance = balance + replenishment;
+        int finalBalance = balance + replenishment + bonus;
 
         System.out.println("Итоговый баланс : " + finalBalance);
         System.out.println("Итоговый бонус : " + bonus);
